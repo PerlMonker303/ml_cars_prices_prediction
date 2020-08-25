@@ -28,7 +28,8 @@ fprintf('Starting gradient descent with learning rate %d and %d iterations ...\n
 
 # Call gradient descent to get the best thetas possible for the given data
 theta = zeros(columns(X), 1);
-[theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters);
+lambda = 30
+[theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters, lambda);
 
 fprintf('Plotting graph with cost evolution\n');
 

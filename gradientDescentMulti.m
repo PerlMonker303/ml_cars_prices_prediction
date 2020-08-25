@@ -1,4 +1,4 @@
-function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters)
+function [theta, J_history] = gradientDescentMulti(X, y, theta, alpha, num_iters, lambda)
 
 # m = nr of training examples
 m = length(y);
@@ -15,7 +15,11 @@ for iter = 1:num_iters
       hyp = X(i,:) * theta;
       sum_cost_feat += (hyp - y(i, 1)) * X(i, j:j);
     endfor
-    theta_new(j) = theta(j) - alpha * sum_cost_feat / m; # store the new value of thetaj
+    if (j > 1)
+      theta_new(j) = theta(j) - alpha * (sum_cost_feat / m + lambda/m * theta(j,1) ); # store the new value of thetaj
+    else
+      theta_new(j) = theta(j) - alpha * sum_cost_feat / m; # store the new value of thetaj
+    endif
   endfor
   
   for th = 1:rows(theta)

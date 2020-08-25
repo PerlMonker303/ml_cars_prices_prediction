@@ -1,4 +1,4 @@
-function [X_norm, mu, sigma] = featureNormalization(X)
+function [X_norm, mu, sigma] = featureNormalize(X)
   
 #initialise mu and sigma
 X_norm = X;
