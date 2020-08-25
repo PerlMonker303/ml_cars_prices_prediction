@@ -13,3 +13,8 @@ I wrote this small project to practice my understanding of linear regression wit
   <li>Batch Gradient Descent</li>
   <li>Feature Scaling using Mean Normalization</li>
 </ul>
+
+<h2>To do</h2>
+<ul>
+  <li>Apply regularization to optimize the predictions</li>
+</uL
