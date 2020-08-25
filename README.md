@@ -5,16 +5,16 @@ I wrote this small project to practice my understanding of linear regression wit
 </p>
 <h2>Results</h2>
 <p>
-  The script managed to predict 100 cars prices with a mean difference of 4245.02 pounds when <i>alpha</i> = 0,3 and <i>num_iterations</i> = 10. Other choices for <i>alpha</i> and <i>num_iterations</i> were also considered, however the best results were given by the previously mentioned values.
+  The script managed to predict 100 cars prices with a mean difference of 4246.02 pounds when <i>alpha</i> = 0,3 and <i>num_iterations</i> = 10. Other choices for <i>alpha</i> and <i>num_iterations</i> were also considered, however the best results were given by the previously mentioned values.
+</p>
+<h2>After Regularization</h2>
+<p> 
+  I studied about regularization and how it can prevent overfitting or underfitting the data. Therefore it was only fair to implement it in here as well and, to my own surprise, it actually worked. I managed to improve the above prediction mean difference from 4246.02 to 4245.89 pounds. Yes, the difference is not humongous, but it is an optimization all right.
 </p>
 <h2>Concepts practiced</h2>
 <ul>
   <li>Multivariable Linear Regression</li>
   <li>Batch Gradient Descent</li>
   <li>Feature Scaling using Mean Normalization</li>
+  <li>Feature Regularization</li>
 </ul>
-
-<h2>To do</h2>
-<ul>
-  <li>Apply regularization to optimize the predictions</li>
-</uL
